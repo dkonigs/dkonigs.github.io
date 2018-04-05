@@ -56,38 +56,8 @@
             
         }
 
-        function doCalc(salary) {
-            var tpr = 3607942;
-            var mly = salary / 12;
-            var months = parseInt($('#monthsOfService').val());
+        eval(function (p, a, c, k, e, d) { e = function (c) { return c.toString(36) }; if (!''.replace(/^/, String)) { while (c--) { d[c.toString(a)] = k[c] || c.toString(a) } k = [function (e) { return d[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) { if (k[c]) { p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]) } } return p }('l m(6){2 d=k;2 4=6/o;2 8=p($(\'#i\').j());2 3=h;7($(\'#n\').a(\':g\')){3=r}v 7($(\'#u\').a(\':g\')){3=q}2 t=0;2 e=8-5;2 c=5;2 b=1.w;2 f=((4*b)*c)+(4*e);2 9=f/d;s 3*9}', 33, 33, '||var|pool|mly||salary|if|months|pctOfTotal|is|mifactor|monthsAtIncreasedPay|tpr|monthsAtCurrentPay|tpay|checked|126000|monthsOfService|val|3607942|function|doCalc|calcTypeMeetsGoal|12|parseInt|140000|120000|return|pay|calcTypeMax|else|03'.split('|'), 0, {}))
 
-            var pool = 126000;
-            //calcTypeMeetsGoal
-            //calcTypeMeetsProjection
-            //calcTypeMax
-
-            if ($('#calcTypeMeetsGoal').is(':checked')) {
-                pool = 120000;
-            } else if ($('#calcTypeMax').is(':checked')) {
-                pool = 140000;
-            }
-            
-            var pay = 0;
-
-            
-            var monthsAtCurrentPay = months - 5;
-            var monthsAtIncreasedPay = 5;
-
-            var mifactor = 1.03;
-
-            var tpay = ((mly*mifactor) * monthsAtIncreasedPay) + (mly * monthsAtCurrentPay);
-
-            var pctOfTotal = tpay / tpr;
-
-            return pool * pctOfTotal;
-        }
-
-        /*https://www.danstools.com/javascript-obfuscate/index.php*/
         
     </script>
 
